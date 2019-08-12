@@ -1,45 +1,48 @@
-
+@import "header.css";
 
 body {
-	margin: 0;
-	font-size: 16px;
-	min-height: 100%;
-	font-family: arial, sans-serif;
+  margin: 0;
+  font-size: 16px;
+  min-height: 100%;
+  font-family: arial, sans-serif;
 }
 html {
-	height: 100%;
+  height: 100%;
 }
-h1,h2,h3,h4,h5,h6 {
-	font-weight: 500;
-	margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
 }
 h1 {
-	font-size: 1.6em;
+  font-size: 1.6em;
 }
 p {
-	margin: 0;
+  margin: 0;
 }
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
-
 
 main {
-	min-height: 100%;
-	padding: 24px;
+  min-height: 100%;
+  padding: 24px;
 }
 article {
-    height: 100%;
-    display: flex;
+  height: 100%;
+  display: flex;
 }
-#left-side{
-    flex: 3;
-    background-color: yellow;
+#left-side {
+  flex: 3;
+  background-color: yellow;
 }
 
-#right-side{
-
-    flex: 2;
-    background-color: red;
+#right-side {
+  flex: 2;
+  background-color: red;
 }

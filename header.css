@@ -1,0 +1,53 @@
+header {
+  background-color: white;
+  display: flex;
+  height: 60px;
+  box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+header .left {
+  flex: 1;
+}
+
+header .center {
+  flex: 4;
+}
+
+header .right {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.youtube-icon-color {
+  color: red;
+  font-size: 32px;
+  margin-left: 60px;
+  padding: 16px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bar-icon-color {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-left: 22px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-name {
+  display: inline-block;
+  font-size: 16px;
+  align-self: center;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+  cursor: pointer;
+}
