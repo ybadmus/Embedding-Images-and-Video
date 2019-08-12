@@ -11,6 +11,7 @@ header .left {
 
 header .center {
   flex: 4;
+  align-self: center;
 }
 
 header .right {
@@ -29,7 +30,7 @@ header .right {
 }
 
 .bar-icon-color {
-  color: rgba(0, 0, 0, 0.6);
+  color: #777;
   padding: 20px;
   margin-left: 22px;
   font-size: 20px;
@@ -40,8 +41,8 @@ header .right {
   display: inline-block;
   font-size: 16px;
   align-self: center;
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.5)
+  font-weight: 300;
+  color:#999;
 }
 
 .profile {
@@ -50,4 +51,59 @@ header .right {
   border-radius: 50%;
   align-self: center;
   cursor: pointer;
+}
+
+.search {
+  flex: 0 0 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 100px;
+  width: 40%;
+  transition: all 0.2s;
+  margin-right: -3.25rem;
+}
+
+.search__input:focus {
+  outline: none;
+  width: 60%;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  margin-right: -20px;
+  background-color: #f4f2f2;
+}
+.search__button:focus {
+  border: none;
+  background-color: #f4f2f2;
+}
+.search__button:active {
+  transform: translateY(2px);
+}
+
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #999;
 }
