@@ -34,12 +34,12 @@ article {
     display: flex;
 }
 #left-side{
-    flex: 2;
+    flex: 3;
     background-color: yellow;
 }
 
 #right-side{
 
-    flex: 1;
+    flex: 2;
     background-color: red;
 }
