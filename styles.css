@@ -1,4 +1,6 @@
 @import "header.css";
+@import "card.css";
+
 body {
 	margin: 0;
 	font-size: 16px;

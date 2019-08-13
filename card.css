@@ -1,0 +1,52 @@
+
+.video-list{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.myCard{
+    width: 80%;
+    height: 120px;
+    background-color: white;
+    box-shadow: 1px 2px 6px rgba(0,0,0,.4);
+    border-radius: 4px;
+}
+
+
+.myCard .myCard__image{
+    width: 30%;
+    height: 74%;
+    vertical-align: top;
+    margin: 16px;
+}
+
+.myCard__body{
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    margin: 0px 4px;
+}
+
+.myCard__title{
+    margin-top: 12px;
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.myCard__channel-name{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.myCard__count{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6)
+}
