@@ -4,6 +4,11 @@ nav {
   flex-direction: row;
   height:64px;
   box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
 
 nav .myLeft {

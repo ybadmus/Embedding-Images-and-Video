@@ -25,6 +25,7 @@ a {
 	text-decoration: none;
 }
 main {
+	margin-top: 80px;
 	min-height: 100%;
 	padding: 24px;
 }
