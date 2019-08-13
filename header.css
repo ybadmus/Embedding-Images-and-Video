@@ -1,20 +1,22 @@
 header {
   background-color: white;
-  display: flex;
-  height: 60px;
+  display: flex !important;
+  flex-direction: row;
+  height:64px;
   box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.4);
 }
 
-header .left {
+header .myLeft {
   flex: 1;
+  display: flex;
 }
 
-header .center {
+header .myCenter {
   flex: 4;
   align-self: center;
 }
 
-header .right {
+header .myRight {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
@@ -43,6 +45,7 @@ header .right {
   align-self: center;
   font-weight: 300;
   color:#999;
+  margin-bottom: 0;
 }
 
 .profile {
