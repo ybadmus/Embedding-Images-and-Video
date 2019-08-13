@@ -1,4 +1,4 @@
-header {
+nav {
   background-color: white;
   display: flex !important;
   flex-direction: row;
@@ -6,17 +6,17 @@ header {
   box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.4);
 }
 
-header .myLeft {
+nav .myLeft {
   flex: 1;
   display: flex;
 }
 
-header .myCenter {
+nav .myCenter {
   flex: 4;
   align-self: center;
 }
 
-header .myRight {
+nav .myRight {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
