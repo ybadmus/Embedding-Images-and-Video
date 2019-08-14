@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- SEARCH BAR AND NAVIGATION -->
+    <nav>
+        <div class="myLeft">
+            <i class="fas fa-bars bar-icon-color"></i>
+            <i class="fab fa-youtube youtube-icon-color"></i>
+        </div>
+        <div class="myCenter">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search a music, a video or something else">
+                <a class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </a>
+            </form>
+        </div>
+        <div class="myRight">
+            <p class="profile-name">Nyan Lin Tun</p>
+            <img src="https://avatars3.githubusercontent.com/u/6771972?s=460&v=4" class="profile" />
+        </div>
+
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="video-player">
+                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/XogujO9Cuko" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="info">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h5 class="card-title">Embedding Images and Video: The Hard Way</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img width="100%" height="100%"
+                                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k=" />
+                                </div>
+
+                                <div class="col-sm-4" style="padding-left: 0px;">
+                                    <div>
+                                        <h6>The Odin Project</h6>
+                                    </div>
+                                    <div>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-danger btn-sm"><i
+                                                    class="fab fa-youtube"></i> Subscribe</button>
+                                            <button type="button" class="btn btn-default btn-sm">792</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-7">
+                                    <div style="margin-top: 20px;">
+                                        <span style="float: right; font-size: 20px; font-weight: 500;">43,000 views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="border-top: 1px solid silver; margin-top: 10px; ">
+                                <div class="col-sm-6" style="padding-top: 10px;">
+                                        <span style="margin: 10px"><i class="fas fa-plus"></i> Add to</span>
+                                        <span style="margin: 10px"><i class="fas fa-share"></i> Share</span>
+                                       <span style="margin: 10px"><i class="fas fa-ellipsis-h"></i> More</span> 
+                                </div>
+                                <div class="col-sm-6"  style="padding-top: 10px; padding-left: 0px;">
+                                    <div style="float: right">
+                                            <span style="margin: 5px"><i class="fas fa-thumbs-up"></i> 233</span>
+                                            <span style="margin: 5px"><i class="fas fa-thumbs-down"></i> 14</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <aside id="right-side"> -->
+            <div class="col-sm-4 video-list">
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            New Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+                <div class="myCard">
+
+                    <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
+                        class="myCard__image" />
+
+                    <div class="myCard__body">
+                        <p class="myCard__title">
+                            Title Text is Here
+                        </p>
+                        <span class="myCard__channel-name">Channel Name Here</span>
+                        <span class="myCard__count">1.4M</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
