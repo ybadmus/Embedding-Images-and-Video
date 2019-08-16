@@ -36,8 +36,12 @@
 	padding-top: 10px;
 }
 
-.viewerAction .leftDivViewerActions span {
+.leftDivViewerActions span {
 	margin: 10px;
+}
+
+.rightDivViewerActions span {
+	margin: 5px;
 }
 
 .viewerActions .rightDivViewerActions {
@@ -49,6 +53,3 @@
 	float: right;
 }
 
-.viewerActions .rightDivViewerActions span {
-	margin: 5px;
-}
