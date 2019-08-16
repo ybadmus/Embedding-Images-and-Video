@@ -17,7 +17,7 @@ nav .myLeft {
 }
 
 nav .myCenter {
-  flex: 4;
+  flex: 2;
   align-self: center;
 }
 
@@ -79,7 +79,7 @@ nav .myRight {
   border-radius: 100px;
   width: 40%;
   transition: all 0.2s;
-  margin-right: -3.25rem;
+  margin-right: -3.75rem;
 }
 
 .search__input:focus {

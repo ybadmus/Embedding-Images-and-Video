@@ -21,16 +21,21 @@
         <div class="myCenter">
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Search a music, a video or something else">
-                <a class="search__button">
+                <button class="search__button">
                     <svg class="search__icon">
                         <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                     </svg>
-                </a>
+                </button>
             </form>
         </div>
         <div class="myRight">
+            <div>
+                <i class="fas fa-plus bar-icon-color"></i>
+                <i class="fas fa-share bar-icon-color"></i>
+                <i class="fas fa-bell bar-icon-color"></i>
+            </div>
             <p class="profile-name">Nyan Lin Tun</p>
-            <img src="https://avatars3.githubusercontent.com/u/6771972?s=460&v=4" class="profile" />
+            <img src="https://avatars3.githubusercontent.com/u/6771972?s=460&v=4" class="profile" alt="Profile" />
         </div>
 
     </nav>
@@ -38,12 +43,12 @@
         <div class="row">
             <div class="col-sm-8">
                 <div id="video-player">
-                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/XogujO9Cuko" frameborder="0"
+                    <iframe class="iframeDiv" src="https://www.youtube.com/embed/XogujO9Cuko"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div id="info">
-                    <div class="card" style="width: 100%;">
+                    <div class="card">
                         <div class="card-body">
 
                             <div class="row">
@@ -51,13 +56,13 @@
                                     <h5 class="card-title">Embedding Images and Video: The Hard Way</h5>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-1">
-                                    <img width="100%" height="100%"
+                            <div class="row"> 
+                                <div class="col-md-1">
+                                    <img class="userIcon" alt="image"
                                         src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k=" />
                                 </div>
 
-                                <div class="col-sm-4" style="padding-left: 0px;">
+                                <div class="col-sm-4 subscriptionDiv">
                                     <div>
                                         <h6>The Odin Project</h6>
                                     </div>
@@ -71,21 +76,21 @@
                                 </div>
 
                                 <div class="col-sm-7">
-                                    <div style="margin-top: 20px;">
-                                        <span style="float: right; font-size: 20px; font-weight: 500;">43,000 views</span>
+                                    <div class="viewsDiv">
+                                        <span>43,000 views</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" style="border-top: 1px solid silver; margin-top: 10px; ">
-                                <div class="col-sm-6" style="padding-top: 10px;">
-                                        <span style="margin: 10px"><i class="fas fa-plus"></i> Add to</span>
-                                        <span style="margin: 10px"><i class="fas fa-share"></i> Share</span>
-                                       <span style="margin: 10px"><i class="fas fa-ellipsis-h"></i> More</span> 
+                            <div class="row viewerActions">
+                                <div class="col-sm-6 leftDivViewerActions">
+                                        <span><i class="fas fa-plus"></i> Add to</span>
+                                        <span><i class="fas fa-share"></i> Share</span>
+                                       <span><i class="fas fa-ellipsis-h"></i> More</span> 
                                 </div>
-                                <div class="col-sm-6"  style="padding-top: 10px; padding-left: 0px;">
-                                    <div style="float: right">
-                                            <span style="margin: 5px"><i class="fas fa-thumbs-up"></i> 233</span>
-                                            <span style="margin: 5px"><i class="fas fa-thumbs-down"></i> 14</span>
+                                <div class="col-sm-6 rightDivViewerActions">
+                                    <div>
+                                            <span><i class="fas fa-thumbs-up"></i> 233</span>
+                                            <span><i class="fas fa-thumbs-down"></i> 14</span>
                                     </div>
                                 </div>
                             </div>
@@ -94,12 +99,11 @@
                 </div>
             </div>
 
-            <!-- <aside id="right-side"> -->
             <div class="col-sm-4 video-list">
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -113,7 +117,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -127,7 +131,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -141,7 +145,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -155,7 +159,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -169,7 +173,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -183,7 +187,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
@@ -197,7 +201,7 @@
                 <div class="myCard">
 
                     <img src="https://i.ytimg.com/an_webp/1KySdKPqDFU/mqdefault_6s.webp?du=3000&sqp=CNijy-oF&rs=AOn4CLC-5cDLPrpGwgl_0OcaiXCdppVIPg"
-                        class="myCard__image" />
+                        class="myCard__image" alt="thumbnail" />
 
                     <div class="myCard__body">
                         <p class="myCard__title">
